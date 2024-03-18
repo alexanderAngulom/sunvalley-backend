@@ -3,7 +3,7 @@ const restRoutes = require('./routes/restRoutes');
 const graphqlRoutes = require('./routes/graphqlRoutes');
 const { swaggerUi, specs } = require('./utils/swagger');
 
-const { app } = require('./config/server'); // Asegúrate de especificar la ruta correcta
+const { app } = require('./config/server'); 
 
 // Middleware para las rutas de la API REST
 app.use('/api', restRoutes);

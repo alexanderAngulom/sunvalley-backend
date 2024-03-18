@@ -1,6 +1,5 @@
 const { gql } = require('apollo-server-express');
 
-// Define el esquema GraphQL
 const typeDefs = gql`
   type Location {
     name: String

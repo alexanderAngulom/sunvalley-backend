@@ -1,5 +1,3 @@
-// Configuración de Swagger
-
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const constantes= require('./constants')
@@ -12,7 +10,7 @@ const options = {
       description: 'Documentation for my API'
     }
   },
-  apis: ['./src/routes/*.js'] // Rutas donde se encuentran los endpoints
+  apis: ['./src/routes/*.js'] 
 };
 
 const specs = swaggerJsdoc(options);

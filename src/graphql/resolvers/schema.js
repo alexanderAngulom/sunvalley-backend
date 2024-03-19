@@ -5,9 +5,14 @@ const resolvers = {
         
         characters: async () => {
             const response=await getCharacters();
-            console.log(response);
+            //console.log(response);
             return response.characters;
         },
+        episodes:async ()=>{
+            const response=await getCharacters();
+            console.log(response.episodes);
+            return response.episodes;
+        }
     },
 };
 

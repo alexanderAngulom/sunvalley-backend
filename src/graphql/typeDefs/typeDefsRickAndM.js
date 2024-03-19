@@ -24,6 +24,13 @@ const typeDefs = gql`
   type CharacterInfo {
     count: Int
   }
+  type episode{
+    name:String!
+    episode:String!
+  }
+  type Episodes{
+    results:[episode]
+  }
 
   type Characters {
     info: CharacterInfo
@@ -32,6 +39,7 @@ const typeDefs = gql`
 
   type Query {
     characters: Characters
+    episodes:Episodes
   }
 `;
 

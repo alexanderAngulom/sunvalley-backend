@@ -1,4 +1,3 @@
-const express = require('express');
 const restRoutes = require('./routes/restRoutes');
 const graphqlRoutes = require('./routes/graphqlRoutes');
 const { swaggerUi, specs } = require('./utils/swagger');
